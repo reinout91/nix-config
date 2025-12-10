@@ -29,7 +29,6 @@ let
 in
 {
   imports = (import ../modules/desktops ++
-    import ../modules/editors ++
     import ../modules/hardware ++
     import ../modules/programs ++
     import ../modules/services ++

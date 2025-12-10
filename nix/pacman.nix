@@ -31,11 +31,6 @@
     };
   };
 
-  xdg = {
-    enable = true;
-    systemDirs.data = [ "/home/${vars.user}/.nix-profile/share" ];
-  }; # Add Nix Packages to XDG_DATA_DIRS
-
   nix = {
     settings = {
       auto-optimise-store = true;

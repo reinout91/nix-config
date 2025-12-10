@@ -9,7 +9,6 @@
 #   │        └─ hardware-configuration.nix
 #   └─ ./modules
 #       ├─ ./desktops
-#       │   ├─ hyprland.nix
 #       │   └─ ./virtualisation
 #       │       └─ default.nix
 #       └─ ./hardware

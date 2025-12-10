@@ -31,7 +31,7 @@ in
   work = lib.nixosSystem {
     inherit system;
     specialArgs = {
-      inherit inputs system stable hyprland hyprspace vars;
+      inherit inputs system stable vars;
       host = {
         hostName = "work";
         mainMonitor = "eDP-1";
@@ -57,7 +57,7 @@ in
   wsl = lib.nixosSystem {
     inherit system;
     specialArgs = {
-      inherit inputs system stable hyprland hyprspace nixos-wsl vars;
+      inherit inputs system stable nixos-wsl vars;
       host = {
         hostName = "wsl";
         mainMonitor = ":0";

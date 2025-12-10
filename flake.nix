@@ -63,7 +63,6 @@
         user = "nixos";
         location = "$HOME/.setup";
         terminal = "kitty";
-        editor = "nano";
       };
     in
     {

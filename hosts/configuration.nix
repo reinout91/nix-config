@@ -195,9 +195,6 @@ in
         defaultApplications = {
           "image/jpeg" = [ "image-roll.desktop" "feh.desktop" ];
           "image/png" = [ "image-roll.desktop" "feh.desktop" ];
-          "text/plain" = "code.desktop";
-          "text/html" = "code.desktop";
-          "text/csv" = "code.desktop";
           "application/pdf" = [ "wps-office-pdf.desktop" "firefox.desktop" "google-chrome.desktop" ];
           "application/zip" = "org.gnome.FileRoller.desktop";
           "application/x-tar" = "org.gnome.FileRoller.desktop";

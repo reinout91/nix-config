@@ -62,12 +62,6 @@
 
   programs.light.enable = true;
 
-  flatpak = {
-    extraPackages = [
-      "com.github.tchx84.Flatseal"
-    ];
-  };
-
   services = {
     syncthing = {
       enable = true;

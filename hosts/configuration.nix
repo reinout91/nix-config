@@ -139,8 +139,6 @@ in
     };
   };
 
-  flatpak.enable = true;
-
   nix = {
     settings = {
       auto-optimise-store = true;

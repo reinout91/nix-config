@@ -12,6 +12,5 @@
 
 [
   ./accounts.nix
-  ./flatpak.nix
   ./kitty.nix
 ]

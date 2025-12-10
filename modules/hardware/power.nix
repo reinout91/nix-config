@@ -5,7 +5,7 @@
 { config, lib, vars, ... }:
 
 {
-  config = lib.mkIf (config.laptop.enable && config.gnome.enable == false) {
+  config = lib.mkIf (config.laptop.enable) {
     services = {
       tlp.enable = false; # Disable due to suspend not working when docked and connected to AC
       auto-cpufreq.enable = true; # Power Efficiency

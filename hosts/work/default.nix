@@ -42,7 +42,6 @@
   };
 
   laptop.enable = true;
-  gnome.enable = true;
 
   hardware = {
     graphics = {

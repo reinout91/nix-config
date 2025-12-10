@@ -56,7 +56,7 @@
 
     };
 
-  outputs = inputs @ { self, nixpkgs, nixpkgs-stable, nixos-hardware, home-manager, home-manager-stable, darwin, nixgl, hyprland, hyprspace, plasma-manager, nixos-wsl, ... }: # Function telling flake which inputs to use
+  outputs = inputs @ { self, nixpkgs, nixpkgs-stable, nixos-hardware, home-manager, home-manager-stable, darwin, nixgl, nixos-wsl, ... }: # Function telling flake which inputs to use
     let
       # Variables Used In Flake
       vars = {
@@ -70,7 +70,7 @@
       nixosConfigurations = (
         import ./hosts {
           inherit (nixpkgs) lib;
-          inherit inputs nixpkgs nixpkgs-stable nixos-hardware home-manager doom-emacs hyprland hyprspace plasma-manager nixos-wsl vars; # Inherit inputs
+          inherit inputs nixpkgs nixpkgs-stable nixos-hardware home-manager nixos-wsl vars; # Inherit inputs
         }
       );
 

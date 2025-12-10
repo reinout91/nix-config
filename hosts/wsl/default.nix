@@ -11,8 +11,6 @@
   wsl.enable = true;
   wsl.defaultUser = "nixos";
 
-  hyprland.enable = true;
-
   programs.nix-ld = {
       enable = true;
       package = pkgs.nix-ld-rs;

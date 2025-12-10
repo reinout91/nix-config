@@ -13,7 +13,4 @@
 #
 
 [
-  # ./intel.nix
-  ./nvidia.nix
-  ./wpa.nix
 ]

@@ -9,7 +9,6 @@
 #   │        └─ hardware-configuration.nix
 #   └─ ./modules
 #       ├─ ./desktops
-#       │   ├─ hyprland.nix
 #       │   └─ ./virtualisation
 #       │       └─ default.nix
 #       └─ ./hardware
@@ -43,7 +42,6 @@
   };
 
   laptop.enable = true;
-  gnome.enable = true;
 
   hardware = {
     graphics = {
@@ -55,34 +53,14 @@
         libvdpau-va-gl
       ];
     };
-    sane = {
-      enable = true;
-      extraBackends = [ pkgs.sane-airscan ];
-    };
   };
 
   environment = {
     systemPackages = with pkgs; [
-      ansible # Automation
-      ciscoPacketTracer8 # Networking
-      eduvpn-client # VPN
-      nil # LSP
-      obsidian # Notes
-      rclone # Gdrive ($ rclone config | rclone mount --daemon gdrive: <mount> | fusermount -u <mount>)
-      simple-scan # Scanning
-      sshpass # Ansible dependency
-      syncthing # Sync Tool
-      wacomtablet # Tablet
     ];
   };
 
   programs.light.enable = true;
-
-  flatpak = {
-    extraPackages = [
-      "com.github.tchx84.Flatseal"
-    ];
-  };
 
   services = {
     syncthing = {

@@ -9,7 +9,7 @@
 #           └─ default.nix
 #
 
-{ inputs, nixpkgs, nixpkgs-stable, nixos-hardware, home-manager, hyprland, hyprspace, plasma-manager, nixos-wsl, vars, ... }:
+{ inputs, nixpkgs, nixpkgs-stable, nixos-hardware, home-manager, nixos-wsl, vars, ... }:
 
 let
   system = "x86_64-linux";
